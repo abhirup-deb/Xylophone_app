@@ -12,6 +12,7 @@ class XylophoneApp extends StatelessWidget {
           child: Column(
             children: <Widget>[
               FlatButton(
+                color: Colors.deepPurple,
                 onPressed: () {
                   final player = AudioCache();
                   player.play('note1.wav');
@@ -19,6 +20,7 @@ class XylophoneApp extends StatelessWidget {
               ),
 
               FlatButton(
+                color: Colors.indigo,
                 onPressed: () {
                   final player = AudioCache();
                   player.play('note2.wav');
@@ -26,6 +28,7 @@ class XylophoneApp extends StatelessWidget {
               ),
 
               FlatButton(
+                color: Colors.blue
                 onPressed: () {
                   final player = AudioCache();
                   player.play('note3.wav');
@@ -33,6 +36,7 @@ class XylophoneApp extends StatelessWidget {
               ),
 
               FlatButton(
+                color: Colors.green,
                 onPressed: () {
                   final player = AudioCache();
                   player.play('note4.wav');
@@ -40,6 +44,7 @@ class XylophoneApp extends StatelessWidget {
               ),
 
               FlatButton(
+                color: Colors.yellow,
                 onPressed: () {
                   final player = AudioCache();
                   player.play('note5.wav');
@@ -47,6 +52,7 @@ class XylophoneApp extends StatelessWidget {
               ),
 
               FlatButton(
+                color: Colors.orange,
                 onPressed: () {
                   final player = AudioCache();
                   player.play('note6.wav');
@@ -54,6 +60,7 @@ class XylophoneApp extends StatelessWidget {
               ),
 
               FlatButton(
+                color: Colors.red,
                 onPressed: () {
                   final player = AudioCache();
                   player.play('note7.wav');
