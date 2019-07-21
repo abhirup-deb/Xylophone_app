@@ -15,11 +15,13 @@ class XylophoneApp extends StatelessWidget {
         body: SafeArea(
           child: Column(
             children: <Widget>[
-              FlatButton(
-                color: Colors.deepPurple,
-                onPressed: () {
-                 Sound(1);
-                },
+              Expanded(
+                child: FlatButton(
+                  color: Colors.deepPurple,
+                  onPressed: () {
+                   Sound(1);
+                  },
+                ),
               ),
 
               FlatButton(
