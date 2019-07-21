@@ -8,64 +8,33 @@ class XylophoneApp extends StatelessWidget {
     final player = AudioCache();
     player.play('note$no.wav');
   }
+
+   Key(int no,Color Cr) {
+   return Expanded(
+     child: FlatButton(
+       color: Cr,
+         onPressed: () {
+           Sound(no);
+         }
+     ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         body: SafeArea(
           child: Column(
-            children: <Widget>[
-              Expanded(
-                child: FlatButton(
-                  color: Colors.deepPurple,
-                  onPressed: () {
-                   Sound(1);
-                  },
-                ),
-              ),
-
-              FlatButton(
-                color: Colors.indigo,
-                onPressed: () {
-                  Sound(2);
-                },
-              ),
-
-              FlatButton(
-                color: Colors.blue,
-                onPressed: () {
-                  Sound(3);
-                },
-              ),
-
-              FlatButton(
-                color: Colors.green,
-                onPressed: () {
-                  Sound(4);
-                },
-              ),
-
-              FlatButton(
-                color: Colors.yellow,
-                onPressed: () {
-                  Sound(5);
-                  },
-              ),
-
-              FlatButton(
-                color: Colors.orange,
-                onPressed: () {
-                  Sound(6);
-                },
-              ),
-
-              FlatButton(
-                color: Colors.red,
-                onPressed: () {
-                  Sound(7);
-                },
-              ),
-
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget> [
+              Key(1,Colors.deepPurple),
+              Key(2,Colors.indigo),
+              Key(3,Colors.blue),
+              Key(4,Colors.green),
+              Key(5,Colors.yellow),
+              Key(6,Colors.orange),
+              Key(7,Colors.red),
             ],
           ),
         ),
